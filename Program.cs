@@ -6,7 +6,18 @@ namespace bastaLunchApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World 2019");
+            Console.WriteLine("Wellcome to Basta! 2019"!);
+            var lunchloader = new LunchLoader();
+            var key = Console.ReadKey();
+            if (key.Key == ConsoleKey.V)
+            {
+                lunchloader.PrintVegi();
+            }
+            else 
+            {
+                lunchloader.PrintMeat();
+            }
+
         }
     }
 }
